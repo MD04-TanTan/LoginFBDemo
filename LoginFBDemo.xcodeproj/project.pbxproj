@@ -14,6 +14,8 @@
 		2EEE93B01B9EE0E000987165 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EEE93AF1B9EE0E000987165 /* Images.xcassets */; };
 		2EEE93B31B9EE0E000987165 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEE93B11B9EE0E000987165 /* LaunchScreen.xib */; };
 		2EEE93BF1B9EE0E000987165 /* LoginFBDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE93BE1B9EE0E000987165 /* LoginFBDemoTests.m */; };
+		2EEE93C91B9EE4FA00987165 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEE93C81B9EE4FA00987165 /* FBSDKCoreKit.framework */; };
+		2EEE93CB1B9EE61000987165 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEE93CA1B9EE61000987165 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		2EEE93B81B9EE0E000987165 /* LoginFBDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginFBDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EEE93BD1B9EE0E000987165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EEE93BE1B9EE0E000987165 /* LoginFBDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginFBDemoTests.m; sourceTree = "<group>"; };
+		2EEE93C81B9EE4FA00987165 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		2EEE93CA1B9EE61000987165 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EEE93CB1B9EE61000987165 /* FBSDKLoginKit.framework in Frameworks */,
+				2EEE93C91B9EE4FA00987165 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,8 @@
 		2EEE93A11B9EE0E000987165 /* LoginFBDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2EEE93CA1B9EE61000987165 /* FBSDKLoginKit.framework */,
+				2EEE93C81B9EE4FA00987165 /* FBSDKCoreKit.framework */,
 				2EEE93A61B9EE0E000987165 /* AppDelegate.h */,
 				2EEE93A71B9EE0E000987165 /* AppDelegate.m */,
 				2EEE93A91B9EE0E000987165 /* ViewController.h */,
@@ -343,6 +351,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LoginFBDemo",
+				);
 				INFOPLIST_FILE = LoginFBDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LoginFBDemo",
+				);
 				INFOPLIST_FILE = LoginFBDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
